@@ -31,7 +31,7 @@
     https://u.pcloud.link/publink/show?code=XZKLqakZDXTLl7aMiE00WyaNhzeC0V4XIuSy
     Положить их в папку "weights"
     2) Положить в "input_folder" сет изображений для теста
-    3) Создать "output)folder" куда сохранять обработанные изображения
+    3) Создать "output_folder" куда сохранять обработанные изображения
     4) $ https://github.com/o-evgeny/MRCNN_DeepFashion2.git
     5) $ cd ./MRCNN_DeepFashion2
     6) $ python model.py inference --weights="weights" --input_folder "input_folder" --output_folder "output_folder"
