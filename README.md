@@ -34,7 +34,7 @@
     3) Создать "output)folder" куда сохранять обработанные изображения
     4) $ https://github.com/o-evgeny/MRCNN_DeepFashion2.git
     5) $ cd ./MRCNN_DeepFashion2
-    6) $ python model.py inference --weights=<weights> --input_folder "input_folder" --output_folder "output_folder"
+    6) $ python model.py inference --weights="weights" --input_folder "input_folder" --output_folder "output_folder"
     
    
  7. Мой комментарий: модели, конечно, еще есть куда расти. Налицо, например то что она очень упорно путает между собой длинные и короткие рукава, а так же очень упорно детектирует "юбку" вместо "брюк", причем выбор делает уверенно судя по скору. Если все нормально с датасетом и пайплайном, то я бы дальше провел аугментации данных для слабых мест модели, а по рукавам отдельно вставил бы модуль бинарной классификации.  
