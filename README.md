@@ -29,12 +29,12 @@
  6. Запуск в режиме inference: 
     1) Скачать веса 86 эпохи: 
     https://u.pcloud.link/publink/show?code=XZKLqakZDXTLl7aMiE00WyaNhzeC0V4XIuSy
-    Положить их в папку <weights>
-    2) Положить в <input folder> сет изображений для теста
-    3) Создать <output folder> куда сохранять обработанные изображения
+    Положить их в папку "weights"
+    2) Положить в "input_folder" сет изображений для теста
+    3) Создать "output)folder" куда сохранять обработанные изображения
     4) $ https://github.com/o-evgeny/MRCNN_DeepFashion2.git
     5) $ cd ./MRCNN_DeepFashion2
-    6) $ python model.py inference --weights=<weights> --input_folder <input folder> --output_folder <output folder>
+    6) $ python model.py inference --weights=<weights> --input_folder "input_folder" --output_folder "output_folder"
     
    
  7. Мой комментарий: модель конечно еще далека от совершенства, на лицо, например то что она очень упорно путает между собой длинные и короткие рукава, а так же очень упорно детектирует "юбку" вместо "брюк", причем выбор делает уверенно судя по скору. Если все нормально с датасетом и пайплайном, то я бы дальше провел аугментации данных для слабых мест модели, а по рукавам отдельно вставил бы модуль бинарной классификации.  
