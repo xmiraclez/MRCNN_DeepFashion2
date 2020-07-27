@@ -28,7 +28,7 @@
  6. Запуск в режиме inference: 
     1) Скачать веса 86 эпохи: 
     https://u.pcloud.link/publink/show?code=XZKLqakZDXTLl7aMiE00WyaNhzeC0V4XIuSy
-    Положить их в папку "weights"
+    Сохранить их по адресу "weights"
     2) Положить в "input_folder" сет изображений для теста
     3) Создать "output_folder" куда сохранять обработанные изображения
     4) $ https://github.com/o-evgeny/MRCNN_DeepFashion2.git
